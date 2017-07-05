@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Ni}{Wode}{ 
+\href{mailto:wn2155@columbia.edu}{wn2155@columbia.edu} | 717.218.4574 \\
+\urlstyle{same}\url{http://columbia.edu/~wn2155} | GitHub: \href{https://github.com/wodeni/}{wodeni}\\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Columbia University}
+\descript{B.S. in Computer Science}
+\location{2016.09 - present \\New York, NY}
+\location{Major GPA: 4.0 \\ Cum. GPA: 3,94}
+Dean's list \\
+\sectionsep
+
+\subsection{Dickinson College}
+\descript{B.S. in Computer Science}
+\location{2013.09 - 2016.05 \\ Carlisle, PA}
+\location{Major GPA: 4.0\\
+Cum. GPA: 3.93}
+Departmental Honor \\
+Summa cum laude \\
+Dean's list every semester \\
+John Montgomery Scholarship \\
+Pi Mu Epsilon \\
+Upsilon Pi Epsilon \\
+Alpha Lambda Delta \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+% \sectionsep
+
+% \subsection{Undergraduate}
+Compiler \\
+Computer Graphics \\
+Operating Systems  \\
+Advanced Programming \\
+Database Systems \\
+Artificial Intelligence \\
+Computer Networks \\
+Programming Languages \\
+Theory of Computation \\
+Computer Architecture \\
+Data Structures \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+% \location{Over 5000 lines:}
+Java    \textbullet{}   C    \textbullet{} C++ \textbullet{} OCaml \\
+Haskell \textbullet{} SQL    \textbullet{} Bash \\
+\LaTeX\ \textbullet{} Scheme \textbullet{} Lisp \\
+% \location{Over 1000 lines:}
+\sectionsep
+\subsection{Tools}
+Git/GitHub \textbullet{} Shell \textbullet{} Vim\\  Eclipse \textbullet{} XCode \textbullet{} Visual Studio\\
+Android Studio \textbullet{} GNU make \\
+\sectionsep
+\subsection{Languages}
+\textbullet{} Native: Chinese \\
+\textbullet{} Proficient: English \\
+\textbullet{} Elementary: Japanese \\
+\sectionsep 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Research
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Penrose}
+\descript{| Summer Research at Carnegie Mellon University}
+\location{May 2017 - August 2017 | Pittsburgh, PA}
+Currently working on the Penrose project, in which we design and implement a new programming language that visualizes mathematics. See official site \href{http://penrose.ink/}{http://penrose.ink/} for more.
+\sectionsep
+
+\runsubsection{Cyber Affordance Visualization in Augmented Reality (CAVIAR)}
+\descript{| Research at Columbia University}
+\location{Jan 2017 - May 2017 | New York, NY}
+While working as a research assistant at \href{http://graphics.cs.columbia.edu/kenny/home/home/}{Computer Graphics and User Interfaces Lab (CGUI)}, participated in Cyber Affordance Visualization in Augmented Reality (CAVIAR) project, in which we try to build an AR application that visualizes cyber affordance in indoor and outdoor environments. Learned Unity and Hololens development and investigated the construction of 3D models from GIS data.
+\sectionsep
+
+\runsubsection{\href{http://scholar.dickinson.edu/student_honors/221/}{Whiteboard Scanning Using Super-Resolution}}
+\descript{| Honors Thesis}
+\location{May 2016 | Carlisle, PA}
+A year-long Computer Vision research project, supervised by \textbf{\href{http://users.dickinson.edu/~jmac/}{Prof John MacCormick}}(Advisor), \textbf{\href{http://users.dickinson.edu/~wahlst/}{Prof Timothy Wahls}}, and \textbf{\href{http://users.dickinson.edu/~braught/?}{Prof Grant Braught}}. The project studies one application of a super-resolution algorithm: to compute a clear, scanned output given a low-quality video of a whiteboard. The work was presented on \textbf{\href{http://ccscne.org/conferences/ccscne-2016/}{CCSCNE 2016}} conference.
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{\href{https://github.com/wodeni/raytra}{Raytra}}
+\descript{| Project for Computer Graphics Course}
+\location{Dec. 2016 | New York, NY}
+Implemented a ray tracer from scratch using C++ and OpenEXR. This renderer employs Monte-Carlo ray tracing and scene-wide acceleration using BVH-tree. The output images include features such as Blinn-Phong shading, reflections, refraction, and soft shadows. 
+\sectionsep
+
+
+\runsubsection{\href{https://github.com/wodeni/MPL}{Matrix Processing Language}}
+\descript{| In-course Project}
+\location{Dec. 2016 | New York, NY}
+Designed a new domain specific language that focuses on matrix computations, and implemented a compiler in OCaml, which compiles source programs to LLVM IR. Implemented Conway's Game of Life in less than 30 lines using our language. 
+\sectionsep
+
+% \runsubsection{Building a web server}
+% \descript{| In-course Project}
+% \location{Dec. 2016 | New York, NY}
+% Implemented a web server that supports HTTP 1.0 from scratch in C. The server serves static contents as well as dynamic contents served from a simple database server that is also written from scratch. 
+% \sectionsep
+
+% \runsubsection{Othello AIs} 
+% \descript{| In-course Project}
+% \location{Dec. 2014 | Carlisle, PA}
+% Implemented versions of Othello AIs using different strategies. Compared the effect of these features.
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work}
+
+\runsubsection{AsiaInfo}
+\descript{| Summer Intern}
+\location{May 2015 | Guangzhou, China}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+Participated in developing a web application that manages records of servers and applications. 
+The system utilizes Struts and Spring frameworks, MyBatis, and Oracle Database.
+\sectionsep
+
+\runsubsection{Dickinson College Computer Science Department}
+\descript{ | Teaching Assistant and Lab Consultant }
+\location{September 2014 – May 2016 | Carlisle, PA}
+TA for Introduction to Java II with Prof. Timothy Wahls during Spring 2016 Semester. Held evening help room sessions to assist students with homework and projects. 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% 2010     & National & Comp. Soc. of India's National Programming Contest\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies} 
+
+% \begin{tabular}{rll}
+% 2015   & Pi Mu Epsilon U.S. Honorary National Mathematics Society\\
+% 2014   & Upsilon Pi Epsilon Honor Society for the Computing and Information Disciplines\\
+% 2013   & Alpha Lambda Delta First-Year Honor Society\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
